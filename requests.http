@@ -1,0 +1,28 @@
+### Apartments Index
+GET http://localhost:3000/apartments.json
+
+### Apartments Create
+POST http://localhost:3000/apartments.json
+Content-Type: application/json
+
+{
+  "type": "test test",
+  "bedroom": 100,
+  "bathroom": 100
+}
+
+### Apartments Show
+GET http://localhost:3000/apartments/1.json
+
+### Apartments Update
+PATCH http://localhost:3000/apartments/1.json
+Contet-Type: application/json
+
+{
+  "type": "update!!",
+  "bedroom": 10,
+  "bathroom": 10
+}
+
+### Apartments Destroy
+DELETE http://localhost:3000/apartments/1.json
